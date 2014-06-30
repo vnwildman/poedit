@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Poedit 1.6\n"
 "Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
 "POT-Creation-Date: 2014-02-02 15:06+0100\n"
-"PO-Revision-Date: 2013-11-24 07:52+0700\n"
+"PO-Revision-Date: 2014-06-30 14:47+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language: vi\n"
@@ -48,10 +48,10 @@ msgid " Version "
 msgstr " Phiên bản "
 
 #: ../src/edframe.cpp:2863
-#, fuzzy, c-format
+#, c-format
 msgid "%d entry was filled from the translation memory."
 msgid_plural "%d entries were filled from the translation memory."
-msgstr[0] "Gặp lỗi khi cập nhật bộ nhớ dịch: %s"
+msgstr[0] "%d mục đã được điền vào từ bộ nhớ bản dịch."
 
 #: ../src/edframe.cpp:1710
 #, c-format
@@ -75,13 +75,13 @@ msgstr[0] "%i %% đã dịch, %i chuỗi (%s)"
 #, c-format
 msgid ""
 "%i %% translated, %i strings (%i fuzzy, %i bad tokens, %i not translated)"
-msgstr "%i %% đã dịch, %i chuỗi (%i tạm dịch, %i token sai, %i chưa dịch)"
+msgstr "%i %% đã dịch, %i chuỗi (%i tạm dịch, %i thẻ sai, %i chưa dịch)"
 
 #: ../src/edframe.cpp:2543
 #, c-format
 msgid "%i bad token"
 msgid_plural "%i bad tokens"
-msgstr[0] "%i token hỏng"
+msgstr[0] "%i thẻ hỏng"
 
 #: ../src/edframe.cpp:2537
 #, c-format
@@ -92,7 +92,7 @@ msgstr[0] "%i tạm dịch"
 #: ../src/catalog.cpp:131
 #, c-format
 msgid "%i lines of file '%s' were not loaded correctly."
-msgstr "%i dòng của tập tin '%s' được tải lên không chính xác."
+msgstr "%i dòng của tập tin “%s” được tải lên không chính xác."
 
 #: ../src/edframe.cpp:2549
 #, c-format
@@ -140,7 +140,7 @@ msgstr "&Biên tập"
 #: ../src/edframe.cpp:554 ../src/resources/manager.xrc:113
 #: ../src/resources/menus.xrc:5 ../src/resources/menus.xrc:275
 msgid "&File"
-msgstr "&Chính"
+msgstr "Chí&nh"
 
 #: ../src/resources/menus.xrc:97 ../src/resources/menus.xrc:111
 msgid "&Find..."
@@ -165,7 +165,7 @@ msgstr "T&rợ giúp"
 
 #: ../src/resources/menus.xrc:261
 msgid "&License..."
-msgstr ""
+msgstr "&Giấy phép..."
 
 #: ../src/resources/menus.xrc:8 ../src/resources/menus.xrc:278
 msgid "&New..."
@@ -271,12 +271,12 @@ msgstr "&Trình bày"
 #: ../src/catalog.cpp:1665
 #, c-format
 msgid "'%s' is not a valid POT file."
-msgstr "tập tin '%s' không hợp định dạng POT."
+msgstr "tập tin “%s” không hợp định dạng POT."
 
 #: ../src/summarydlg.cpp:56
 #, c-format
 msgid "(%i new, %i obsolete)"
-msgstr "(%i mới, %i không dùng nữa)"
+msgstr "(%i mới, %i cũ)"
 
 #: ../src/resources/summary.xrc:62
 msgid "(0 new, 0 obsolete)"
@@ -284,7 +284,7 @@ msgstr "(0 mới, 0 cũ)"
 
 #: ../src/welcomescreen.cpp:262
 msgid "(Learn more about GNU gettext)"
-msgstr "(Học thêm về GNU gettext)"
+msgstr "(Tìm hiểu thêm về GNU gettext)"
 
 #: ../src/chooselang.cpp:62
 msgid "(Use default language)"
@@ -314,7 +314,7 @@ msgstr "Giới thiệu về %s"
 
 #: ../src/aboutbox.cpp:131 ../src/aboutbox.cpp:139
 msgid "Acknowledgements"
-msgstr ""
+msgstr "Kiến thức cơ bản"
 
 #: ../src/resources/manager.xrc:79
 msgid "Add directory to the list"
@@ -338,7 +338,7 @@ msgstr "Một mục tin trong danh sách các từ khóa:"
 
 #: ../src/edframe.cpp:1435
 msgid "Analyzing WordPress code..."
-msgstr ""
+msgstr "Đang phân tích mã WordPress..."
 
 #: ../src/export_html.cpp:191
 msgid "Automatic translation"
@@ -362,7 +362,7 @@ msgstr "Đường dẫn cơ sở:"
 
 #: ../src/aboutbox.cpp:119
 msgid "Based on the open source version →"
-msgstr ""
+msgstr "Trên cơ sở phiên bản mã nguồn mở →"
 
 #: ../src/resources/prefs.xrc:90
 msgid "Behavior"
@@ -389,11 +389,11 @@ msgstr "Tìm duyệt"
 
 #: ../src/licensing.cpp:122
 msgid "Buy Online..."
-msgstr ""
+msgstr "Mua trực tuyến..."
 
 #: ../src/licensing.cpp:120
 msgid "Buy online..."
-msgstr ""
+msgstr "Mua trực tuyến..."
 
 #: ../src/resources/menus.xrc:130
 msgid "C&atalog"
@@ -425,7 +425,7 @@ msgstr "Không thể thi hành chương trình: %s"
 
 #: ../src/edapp.cpp:877
 msgid "Capitalize"
-msgstr ""
+msgstr "Viết Hoa"
 
 #: ../src/resources/find.xrc:36
 msgid "Case sensitive"
@@ -465,17 +465,15 @@ msgstr "Bảng mã ký tự:"
 
 #: ../src/edapp.cpp:855
 msgid "Check Document Now"
-msgstr ""
+msgstr "Kiểm tra tài liệu ngay"
 
 #: ../src/edapp.cpp:858
-#, fuzzy
 msgid "Check Grammar With Spelling"
-msgstr "Kiểm tra lỗi chính tả"
+msgstr "Kiểm tra lỗi ngữ pháp với chính tả"
 
 #: ../src/edapp.cpp:857
-#, fuzzy
 msgid "Check Spelling While Typing"
-msgstr "Kiểm tra lỗi chính tả"
+msgstr "Kiểm tra lỗi chính tả khi gõ"
 
 #: ../src/edapp.cpp:811
 msgid "Check for Updates..."
@@ -524,7 +522,7 @@ msgstr "Chú thích:"
 
 #: ../src/welcomescreen.cpp:285
 msgid "Configure source code extraction in Properties."
-msgstr "Cấu hình việc rút trích mã nguồn trong `Thuộc tính'."
+msgstr "Cấu hình việc rút trích mã nguồn trong “Thuộc tính”."
 
 #: ../src/manager.cpp:420 ../src/manager.cpp:440
 msgid "Confirmation"
@@ -557,12 +555,12 @@ msgstr "Chép từ chuỗi nguồn"
 
 #: ../src/edapp.cpp:859
 msgid "Correct Spelling Automatically"
-msgstr ""
+msgstr "Tự động sửa chính tả"
 
 #: ../src/wordpress.cpp:226
-#, fuzzy, c-format
+#, c-format
 msgid "Couldn't detect POs location for \"%s\"."
-msgstr "Không thể dò tìm tên miền bản dịch của phần bổ xung \"%s\"."
+msgstr "Không thể dò tìm vị trí của tập tin PO cho \"%s\"."
 
 #: ../src/wordpress.cpp:374
 #, c-format
@@ -580,11 +578,12 @@ msgid "Couldn't save file %s."
 msgstr "Không thể lưu tập tin %s."
 
 #: ../src/welcomescreen.cpp:233
-#, fuzzy
 msgid ""
 "Create a new translation. Poedit will set everything up; you can focus on "
 "translating."
-msgstr "Tạo một bản dịch mới. Poedit sẽ cài đặt mọi thứ một cách tự động."
+msgstr ""
+"Tạo một bản dịch mới. Poedit sẽ cài đặt mọi thứ một cách tự động; bạn có thể "
+"tập trung vào dịch."
 
 #: ../src/welcomescreen.cpp:226
 msgid "Create new translation"
@@ -759,7 +758,7 @@ msgstr ""
 #: ../src/edframe.cpp:2484
 #, c-format
 msgid "Error loading message catalog file '%s'."
-msgstr "Gặp lỗi khi đang tải các chuỗi từ tập tin catalog '%s'."
+msgstr "Gặp lỗi khi đang tải các chuỗi từ tập tin catalog “%s”."
 
 #: ../src/fileviewer.cpp:297
 #, c-format
@@ -810,7 +809,7 @@ msgstr "Lỗi trộn catalog gettext."
 #: ../src/wordpress.cpp:85 ../src/wordpress.cpp:92
 #, c-format
 msgid "Failed to read file '%s'."
-msgstr "Gặp lỗi khi đọc tập tin '%s'."
+msgstr "Gặp lỗi khi đọc tập tin “%s”."
 
 #: ../src/edframe.cpp:2736 ../src/edframe.cpp:2740
 #, c-format
@@ -820,12 +819,12 @@ msgstr "Gặp lỗi khi cập nhật bộ nhớ dịch: %s"
 #: ../src/edapp.cpp:608 ../src/edframe.cpp:477 ../src/edframe.cpp:1221
 #, c-format
 msgid "File '%s' doesn't exist."
-msgstr "Tập tin '%s' không tồn tại."
+msgstr "Tập tin “%s” không tồn tại."
 
 #: ../src/edframe.cpp:470
 #, c-format
 msgid "File '%s' is not a message catalog."
-msgstr "Tập tin '%s' không phải là catalog."
+msgstr "Tập tin “%s” không phải là catalog."
 
 #: ../src/catalog.cpp:1337
 #, c-format
@@ -833,23 +832,20 @@ msgid ""
 "File '%s' is read-only and cannot be saved.\n"
 "Please save it under different name."
 msgstr ""
-"Tập tin '%s' chỉ cho phép đọc và không thể ghi lại được.\n"
+"Tập tin “%s” chỉ cho phép đọc và không thể ghi lại được.\n"
 "Xin hãy ghi lại dưới một cái tên mới."
 
 #: ../src/resources/menus.xrc:142
-#, fuzzy
 msgid "Fill Missing Translations from &TM"
-msgstr "Tìm trong phần dịch"
+msgstr "Điền phần dịch còn thiếu từ &TM"
 
 #: ../src/resources/menus.xrc:141
-#, fuzzy
 msgid "Fill missing translations from &TM"
-msgstr "Tìm trong phần dịch"
+msgstr "Điền phần dịch còn thiếu từ &TM"
 
 #: ../src/edframe.cpp:2880 ../src/edframe.cpp:2907
-#, fuzzy
 msgid "Filling missing translations from TM..."
-msgstr "Tìm trong phần dịch"
+msgstr "Đang điền phần dịch còn thiếu từ TM..."
 
 #: ../src/prefsdlg.cpp:208 ../src/tm/tm_migrate.cpp:225
 msgid "Finalizing..."
@@ -920,7 +916,7 @@ msgstr ""
 
 #: ../src/aboutbox.cpp:191
 msgid "Free version (please upgrade!)"
-msgstr ""
+msgstr "Bản miễn phí (vui lòng nâng cấp!)"
 
 #: ../src/manager.cpp:253 ../src/resources/toolbar.xrc:50
 msgid "Fuzzy"
@@ -937,15 +933,15 @@ msgstr "GNU gettext catalogs (*.po)|*.po|Tất cả các kiểu tập tin (*.*)|
 
 #: ../src/edframe.cpp:1656
 msgid "GNU gettext templates (*.pot)|*.pot|All files (*.*)|*.*"
-msgstr "GNU gettext templates (*.pot)|*.pot|Tất cả các kiểu tập tin (*.*)|*.*"
+msgstr "Mẫu GNU gettext (*.pot)|*.pot|Tất cả các kiểu tập tin (*.*)|*.*"
 
 #: ../src/edframe.cpp:1350
 msgid ""
 "GNU gettext templates (*.pot)|*.pot|GNU gettext catalogs (*.po)|*.po|All "
 "files (*.*)|*.*"
 msgstr ""
-"GNU gettext templates (*.pot)|*.pot|GNU gettext catalogs (*.po)|*.po||Tất cả "
-"các kiểu tập tin (*.*)|*.*"
+"Mẫu GNU gettext (*.pot)|*.pot|GNU gettext catalogs (*.po)|*.po||Tất cả các "
+"kiểu tập tin (*.*)|*.*"
 
 #: ../src/edframe.cpp:3396
 #, c-format
@@ -989,6 +985,11 @@ msgid ""
 "near-empty, it will not be very effective. The more translations\n"
 "you edit and the larger the TM grows, the better it gets."
 msgstr ""
+"Nếu bật, Poedit sẽ cố điền những mục mới bằng cách dùng những phần bạn\n"
+"đã dịch trước đây lưu trong bộ nhớ bản dịch. Nếu TM\n"
+"gần như là trống rỗng, nó sẽ gần như không có kết quả gì. Bạn càng dịch "
+"nhiều\n"
+"thì TM sẽ lớn lên và kết quả sẽ tốt lên."
 
 #: ../src/edframe.cpp:2819
 msgid ""
@@ -1018,9 +1019,8 @@ msgid "Invalid file"
 msgstr "Tập tin không hợp lệ"
 
 #: ../src/edapp.cpp:918
-#, fuzzy
 msgid "Invalid license data."
-msgstr "Tập tin không hợp lệ"
+msgstr "Dữ liệu giấy phép không hợp lệ"
 
 #: ../src/resources/prefs.xrc:351
 msgid "Invocation:"
@@ -1077,30 +1077,30 @@ msgstr "Nghiên cứu sâu hơn"
 
 #: ../src/aboutbox.cpp:132 ../src/aboutbox.cpp:140
 msgid "License Agreement"
-msgstr ""
+msgstr "Điều khoản sử dụng"
 
 #: ../src/licensing.cpp:104
 msgid "License Key"
-msgstr ""
+msgstr "Khóa giấy phép"
 
 #: ../src/edapp.cpp:808
 msgid "License..."
-msgstr ""
+msgstr "Giấy phép..."
 
 #: ../src/aboutbox.cpp:189
 #, c-format
 msgid "Licensed to %s"
-msgstr ""
+msgstr "Đăng ký cho %s"
 
 #: ../src/licensing.cpp:236
 #, c-format
 msgid "Licensed to: %s"
-msgstr ""
+msgstr "Đăng ký cho: %s"
 
 #: ../src/catalog.cpp:144
 #, c-format
 msgid "Line %u of file '%s' is corrupted (not valid %s data)."
-msgstr "Dòng thứ %u của tập tin '%s' bị sai (không hợp kiểu dữ liệu %s)."
+msgstr "Dòng thứ %u của tập tin “%s” bị sai (không hợp kiểu dữ liệu %s)."
 
 #: ../src/resources/prefs.xrc:148
 msgid "Line endings format:"
@@ -1112,16 +1112,16 @@ msgstr "Danh sách đuôi tập tin ngăn cách bởi dấu chấm phẩy (ví d
 
 #: ../src/edapp.cpp:876
 msgid "Make Lower Case"
-msgstr ""
+msgstr "Đổi sang chữ thường"
 
 #: ../src/edapp.cpp:875
 msgid "Make Upper Case"
-msgstr ""
+msgstr "Đổi thành chữ HOA"
 
 #: ../src/catalog.cpp:219
 #, c-format
 msgid "Malformed header: '%s'"
-msgstr "Phần đầu dị hình: '%s'"
+msgstr "Phần đầu dị hình: “%s”"
 
 #: ../src/catalog.cpp:1636
 msgid "Merging differences..."
@@ -1130,11 +1130,11 @@ msgstr "Đang trộn các khác biệt..."
 #: ../src/tm/tm_migrate.cpp:232
 #, c-format
 msgid "Migration exit status: %d"
-msgstr ""
+msgstr "Trạng thái thoát của việc chuyển đổi: %d"
 
 #: ../src/licensing.cpp:99
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: ../src/propertiesdlg.cpp:71
 msgid "Name of the project the translation is for"
@@ -1150,7 +1150,7 @@ msgstr "Câu chưa dịch &tiếp theo"
 
 #: ../src/statistics.cpp:172 ../src/statistics.cpp:198
 msgid "Needs review (fuzzy)"
-msgstr "Cần xem lại (fuzzy)"
+msgstr "Cần xem lại (tạm dịch)"
 
 #: ../src/resources/prefs.xrc:112
 msgid ""
@@ -1187,9 +1187,8 @@ msgid "New strings"
 msgstr "Chuỗi mới"
 
 #: ../src/edframe.cpp:2870
-#, fuzzy
 msgid "No entries could be filled from the translation memory."
-msgstr "Có vấn đề xảy ra khi di chuyển cơ sở dữ liệu dịch của bạn."
+msgstr "Không có mục nào được điền vào từ bộ nhớ bản dịch."
 
 #: ../src/digger.cpp:186
 msgid "No files found in: "
@@ -1285,7 +1284,7 @@ msgstr "Đang phân tích cú pháp tập tin %s..."
 
 #: ../src/edapp.cpp:843
 msgid "Paste and Match Style"
-msgstr ""
+msgstr "Dán và Khớp kiểu dáng"
 
 #: ../src/propertiesdlg.cpp:67
 msgid "Paths"
@@ -1342,7 +1341,7 @@ msgstr "Poedit - Quản lý catalog"
 
 #: ../src/licensing.cpp:74
 msgid "Poedit Registration"
-msgstr ""
+msgstr "Đăng ký Poedit"
 
 #: ../src/tm/tm_migrate.cpp:171 ../src/tm/tm_migrate.cpp:264
 #: ../src/tm/tm_migrate.cpp:294
@@ -1409,6 +1408,9 @@ msgid ""
 "in this and future versions of Poedit, including:\n"
 "\n"
 msgstr ""
+"Đặt mua phiên bản đầy đủ sẽ không bị khóa một số\n"
+"tính năng trên phiên bản này cũng như mới hơn của Poedit, bao gồm:\n"
+"\n"
 
 #: ../src/edframe.cpp:2823
 msgid "Purge"
@@ -1426,7 +1428,7 @@ msgstr "Thoát"
 
 #: ../src/edapp.cpp:834
 msgid "Redo"
-msgstr ""
+msgstr "Redo"
 
 #: ../src/edframe.cpp:1808
 msgid "References"
@@ -1438,7 +1440,7 @@ msgstr "Tham chiếu:"
 
 #: ../src/licensing.cpp:131 ../src/licensing.cpp:135
 msgid "Register"
-msgstr ""
+msgstr "Đăng ký"
 
 #: ../src/edframe.cpp:2387
 msgid "Required header Plural-Forms is missing."
@@ -1522,11 +1524,11 @@ msgstr "Đặt tên"
 
 #: ../src/edapp.cpp:854
 msgid "Show Spelling and Grammar"
-msgstr ""
+msgstr "Hiển thị Chính tả và Ngữ pháp"
 
 #: ../src/edapp.cpp:864
 msgid "Show Substitutions"
-msgstr ""
+msgstr "Hiện phần thay thế"
 
 #: ../src/resources/prefs.xrc:103
 msgid "Show summary after catalog update"
@@ -1538,19 +1540,19 @@ msgstr "Dạng số ít:"
 
 #: ../src/edapp.cpp:866
 msgid "Smart Copy/Paste"
-msgstr ""
+msgstr "Chép/dán thông minh"
 
 #: ../src/edapp.cpp:868
 msgid "Smart Dashes"
-msgstr ""
+msgstr "Gạch nối thông minh"
 
 #: ../src/edapp.cpp:869
 msgid "Smart Links"
-msgstr ""
+msgstr "Liên kết thông minh"
 
 #: ../src/edapp.cpp:867
 msgid "Smart Quotes"
-msgstr ""
+msgstr "Trích dẫn thông minh"
 
 #: ../src/resources/menus.xrc:221
 msgid "Sort by &File Order"
@@ -1591,7 +1593,7 @@ msgstr "Bảng mã dữ liệu nguồn:"
 #: ../src/catalog.cpp:1619
 #, c-format
 msgid "Source code directory '%s' doesn't exist."
-msgstr "Thư mục mã nguồn '%s' không tồn tại."
+msgstr "Thư mục mã nguồn “%s” không tồn tại."
 
 #: ../src/resources/prefs.xrc:238
 msgid "Source code parsers:"
@@ -1623,7 +1625,7 @@ msgstr "Đường dẫn mã nguồn"
 
 #: ../src/edapp.cpp:880
 msgid "Speech"
-msgstr ""
+msgstr "Đọc"
 
 #. TRANSLATORS: %s is language name in its basic form (as you
 #. would see e.g. in a list of supported languages). You may need
@@ -1635,11 +1637,11 @@ msgstr "Chưa có từ điển soát chính tả cho %s, bạn phải cài đặ
 
 #: ../src/edapp.cpp:852
 msgid "Spelling and Grammar"
-msgstr ""
+msgstr "Chính tả và Ngữ pháp"
 
 #: ../src/edapp.cpp:882
 msgid "Start Speaking"
-msgstr ""
+msgstr "Bắt đầu đọc"
 
 #: ../src/resources/find.xrc:43
 msgid "Start from the first item"
@@ -1651,7 +1653,7 @@ msgstr "Thống kê"
 
 #: ../src/edapp.cpp:883
 msgid "Stop Speaking"
-msgstr ""
+msgstr "Dừng đọc"
 
 #: ../src/prefsdlg.cpp:169
 msgid "Stored translations:"
@@ -1667,7 +1669,7 @@ msgstr "Các chuỗi trong ngôn ngữ nguồn"
 
 #: ../src/edapp.cpp:862
 msgid "Substitutions"
-msgstr ""
+msgstr "Thay thế"
 
 #: ../src/edframe.cpp:2392
 #, c-format
@@ -1694,7 +1696,7 @@ msgstr "Nhóm:"
 
 #: ../src/edapp.cpp:870
 msgid "Text Replacement"
-msgstr ""
+msgstr "Thay thế chữ"
 
 #: ../src/wordpress.cpp:368
 #, c-format
@@ -1712,6 +1714,9 @@ msgid ""
 "is only effective for semi-automatic translations after Poedit learns enough "
 "from files that you translated manually."
 msgstr ""
+"TM không chứa bất kỳ chuỗi nào có nội dung tương tự với tập tin này. Nếu nó "
+"chỉ có hiệu quả cho việc dịch bán tự động sau khi Poedit đã học đủ từ những "
+"tập tin mà bạn đa dịch thủ công."
 
 #: ../src/catalog.cpp:1529
 #, c-format
@@ -1721,7 +1726,7 @@ msgid ""
 "\n"
 "It was saved in UTF-8 instead and the setting was modified accordingly."
 msgstr ""
-"Catalog không ghi lại được theo danh nghĩa bộ ký tự '%s' như trong cài đặt.\n"
+"Catalog không ghi lại được theo danh nghĩa bộ ký tự “%s” như trong cài đặt.\n"
 "\n"
 "Thay vào đó, nó được ghi lại bằng kiểu UTF-8 và cài đặt sẽ được chỉnh sửa "
 "lại cho phù hợp."
@@ -1736,13 +1741,12 @@ msgid ""
 msgstr "Tập tin có lẽ đã hư hỏng hoặc là Poedit không chấp nhận định dạng này."
 
 #: ../src/edframe.cpp:1728
-#, fuzzy
 msgid ""
 "The file was saved safely and compiled into the MO format, but it will "
 "probably not work correctly."
 msgstr ""
-"Tập tin đã được ghi lại một cách an toàn, nhưng nó không thể được dịch thành "
-"tập tin có định dạng MO để có thể dùng được."
+"Tập tin đã được ghi lại một cách an toàn và đã được dịch thành tập tin có "
+"định dạng MO, nhưng nó sẽ gần như là không hoạt động chính xác."
 
 #: ../src/edframe.cpp:1731
 msgid ""
@@ -1754,7 +1758,7 @@ msgstr ""
 
 #: ../src/edframe.cpp:1725
 msgid "The file was saved safely."
-msgstr ""
+msgstr "Tập tin được lưu lại một cách an toàn."
 
 #: ../src/edapp.cpp:919
 #, c-format
@@ -1764,6 +1768,10 @@ msgid ""
 "\n"
 "(%s)"
 msgstr ""
+"Liên kết không chứa giấy phép Poedit hợp lệ. Hãy thử nhập vào nó bằng tay "
+"hoặc liên hệ hỗ trợ tại help@poedit.net.\n"
+"\n"
+"(%s)"
 
 #: ../src/licensing.cpp:109
 msgid ""
@@ -1771,6 +1779,9 @@ msgid ""
 "for multiple\n"
 "accounts on a single computer."
 msgstr ""
+"Khóa đăng ký có thể dùng trên nhiều máy tính cá nhân bạn dùng hoặc nhiều tài "
+"khoản\n"
+"trên một máy tính đơn."
 
 #: ../src/welcomescreen.cpp:266
 msgid "The simplest way to fill this catalog is to update it from a POT:"
@@ -1779,11 +1790,12 @@ msgstr ""
 "tập tin POT:"
 
 #: ../src/edframe.cpp:1754
-#, fuzzy, c-format
+#, c-format
 msgid "The translation is ready for use, but %d entry is not translated yet."
 msgid_plural ""
 "The translation is ready for use, but %d entries are not translated yet."
-msgstr[0] "Bản dịch đã sẵn sàng để dùng"
+msgstr[0] ""
+"Bản dịch đã sẵn sàng để dùng, nhưng vẫn còn %d chuỗi vẫn chưa được dịch."
 
 #: ../src/edframe.cpp:1759
 msgid "The translation is ready for use."
@@ -1794,6 +1806,8 @@ msgid ""
 "The translations were marked as fuzzy, because they may be inaccurate. You "
 "should review them for correctness."
 msgstr ""
+"Chuỗi dịch được đánh dấu là tạm dịch, bởi vì chúng chưa thực sự chính xác. "
+"Bạn cần xét lại chúng xem có đúng không."
 
 #: ../src/welcomescreen.cpp:252
 msgid "There are no translations. That’s unusual."
@@ -1893,9 +1907,8 @@ msgid "Total"
 msgstr "Tổng cộng"
 
 #: ../src/edapp.cpp:873
-#, fuzzy
 msgid "Transformations"
-msgstr "Bản dịch"
+msgstr "Chuyển dạng"
 
 #: ../src/welcomescreen.cpp:257
 msgid ""
@@ -1926,9 +1939,8 @@ msgid "Translated %u strings"
 msgstr "Đã dịch %u chuỗi"
 
 #: ../src/edframe.cpp:2906
-#, fuzzy
 msgid "Translating"
-msgstr "Bản dịch"
+msgstr "Đang dịch"
 
 #: ../src/edlistctrl.cpp:333 ../src/export_html.cpp:155
 #: ../src/statistics.cpp:158
@@ -1948,9 +1960,8 @@ msgid "Translation Memory"
 msgstr "Cơ sở dữ liệu dịch"
 
 #: ../src/edframe.cpp:2992 ../src/edframe.cpp:3004
-#, fuzzy
 msgid "Translation Suggestions:"
-msgstr "Thuộc tính bản dịch"
+msgstr "Gợi ý dịch:"
 
 #: ../src/resources/menus.xrc:81
 msgid "Translation is &fuzzy"
@@ -1965,9 +1976,8 @@ msgid "Translation properties"
 msgstr "Thuộc tính bản dịch"
 
 #: ../src/edframe.cpp:2990 ../src/edframe.cpp:3002
-#, fuzzy
 msgid "Translation suggestions:"
-msgstr "Thuộc tính bản dịch"
+msgstr "Gợi ý dịch:"
 
 #: ../src/edlistctrl.cpp:389
 #, c-format
@@ -1985,7 +1995,7 @@ msgstr "Bản dịch:"
 #: ../src/wordpress.cpp:417
 #, c-format
 msgid "Translations folder (%s) doesn't exist."
-msgstr "Thư mục chứa bản dịch '%s' không tồn tại."
+msgstr "Thư mục chứa bản dịch “%s” không tồn tại."
 
 #: ../src/statistics.cpp:180
 msgid "Translations with errors"
@@ -2050,16 +2060,16 @@ msgstr "Cập nhật catalog"
 #: ../src/edframe.cpp:1640
 msgid "Updating the catalog failed. Click on 'Details >>' for details."
 msgstr ""
-"Cập nhật catalog không thành công. Bấm chuột vào 'Chi tiết >>' để có thông "
+"Cập nhật catalog không thành công. Bấm chuột vào “Chi tiết >>” để có thông "
 "tin đầy đủ."
 
 #: ../src/welcomescreen.cpp:204
 msgid "Upgrade to the Pro version of Poedit with more features."
-msgstr ""
+msgstr "Nâng cấp lên phiên bản Pro của Poedit với nhiều tính năng hơn."
 
 #: ../src/licensing.cpp:432
 msgid "Upgrade..."
-msgstr ""
+msgstr "Nâng cấp..."
 
 #: ../src/resources/properties.xrc:61
 msgid "Use custom expression"
@@ -2106,7 +2116,7 @@ msgstr "Phiên bản %s"
 
 #: ../src/licensing.cpp:200
 msgid "View License Key"
-msgstr ""
+msgstr "Hiển thị khóa giấy phép"
 
 #: ../src/wordpress.cpp:511
 msgid "View Log"
@@ -2114,7 +2124,7 @@ msgstr "Xem nhật ký"
 
 #: ../src/licensing.cpp:198
 msgid "View license key"
-msgstr ""
+msgstr "Hiển thị khóa giấy phép"
 
 #: ../src/wordpress.cpp:508
 msgid "View log"
@@ -2133,9 +2143,8 @@ msgid "Windows"
 msgstr "Kiểu Windows"
 
 #: ../src/edframe.cpp:1434
-#, fuzzy
 msgid "WordPress"
-msgstr "Lỗi WordPress"
+msgstr "WordPress"
 
 #: ../src/wordpress.cpp:522
 msgid "WordPress Errors Log"
@@ -2178,7 +2187,7 @@ msgstr "Các thay đổi của bạn sẽ bị mất nếu bạn không ghi nó 
 
 #: ../src/licensing.cpp:173
 msgid "Your copy is upgraded to Poedit Pro."
-msgstr ""
+msgstr "Bản sao được cập nhật thành Poedit Pro."
 
 #: ../src/resources/prefs.xrc:43
 msgid "Your email address:"
@@ -2197,14 +2206,16 @@ msgid "Your name:"
 msgstr "Tên của bạn:"
 
 #: ../src/tm/tm_migrate.cpp:298
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Your translation memory data couldn't be migrated. The error was:\n"
 "\n"
 "%s\n"
 "Please email help@poedit.net and we’ll get it fixed."
 msgstr ""
-"Đã có trục trặc xảy ra và dữ liệu bộ nhớ bản dịch không thể được chuyển đổi. "
+"Dữ liệu bộ nhớ bản dịch không thể được chuyển đổi. Lỗi là:\n"
+"\n"
+"%s\n"
 "Hãy gửi thư đến <help@poedit.net> và chúng tôi sẽ xem xét để sửa chữa."
 
 #: ../src/licensing.cpp:187
@@ -2212,6 +2223,8 @@ msgid ""
 "You’re awesome! Thank you so much\n"
 "for purchasing Poedit Pro."
 msgstr ""
+"Bạn thật đáng nể! Cảm ơn bạn rất nhiều\n"
+"vì đã đặt mua Poedit Pro."
 
 #: ../src/edframe.cpp:3311
 msgid "Zero"
@@ -2236,7 +2249,7 @@ msgstr "không hiểu ngôn ngữ"
 #~ msgstr "Chuỗi dịch tự động:"
 
 #~ msgid "Failed to read folder '%s'."
-#~ msgstr "Gặp lỗi khi đọc thư mục '%s'."
+#~ msgstr "Gặp lỗi khi đọc thư mục “%s”."
 
 #~ msgid "If enabled, Poedit will try to fill in missing translations."
 #~ msgstr "Nếu bật, Poedit sẽ cố thử điền các phần còn thiếu của bản dịch."
@@ -2410,7 +2423,7 @@ msgstr "không hiểu ngôn ngữ"
 #~ "Bạn có thể thêm vào các tệp tín vào danh sách bây giờ."
 
 #~ msgid "Unknown locale code '%s' in registry."
-#~ msgstr "Không hiểu mã nơi diễn ra '%s' trong đăng ký."
+#~ msgstr "Không hiểu mã nơi diễn ra “%s” trong đăng ký."
 
 #~ msgid "Updating translation memory"
 #~ msgstr "Cập nhật bộ nhớ dịch thuật"
